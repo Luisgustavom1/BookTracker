@@ -10,9 +10,33 @@ body{
 div.body{
     /* background-image: linear-gradient(to top right, #A683E3 40%, #E4E9FD 40.20%); */
     background-image: linear-gradient(to top left,#F28705 65%, transparent 0);
-    background-attachment: scroll;
     width: 100vw;
     height: 100vh;
 }
 
 /* input */
+.input{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 18rem;
+}
+label{
+    font-size: 1.6rem;
+}
+input{
+    width: 60rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: .6rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
