@@ -1,0 +1,37 @@
+header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    padding-left: 4rem;
+}
+img{
+    width: 13rem;
+    height: 13rem;
+}
+a{
+    color: #260202;
+}
+
+nav{
+    display: flex;
+    gap: 3rem
+}
+
+nav > div {
+    border: 1px solid #260202;
+    border-radius: 1.5rem;
+
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+}
