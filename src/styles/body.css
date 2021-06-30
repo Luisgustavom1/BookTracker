@@ -9,9 +9,9 @@ body{
 }
 div.body{
     /* background-image: linear-gradient(to top right, #A683E3 40%, #E4E9FD 40.20%); */
-    background-image: linear-gradient(to top left,#F28705 65%, transparent 0);
+    background: linear-gradient(-60deg,#F28705 67%, transparent 0);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 /* input */
