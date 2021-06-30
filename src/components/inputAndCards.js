@@ -12,7 +12,7 @@ export default function Input(){
         if(search){
             params = search
         }
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q==${params}`)
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=${params}`)
             .then((res) => {
                 setDatas(res.data)
                 console.log(res.data)
