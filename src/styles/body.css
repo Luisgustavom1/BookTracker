@@ -40,3 +40,9 @@ input{
     border-radius: .6rem;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
+.loading{
+    text-align: center;
+    color: #591b04;
+    padding-top: 7rem;
+    font-size: 1.4rem;
+}

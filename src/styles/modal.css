@@ -28,6 +28,13 @@
     grid-template-rows: 6rem auto;
     position: static;
 }
+.modal .modal-wrapper::-webkit-scrollbar{
+    width: .5rem;
+}
+.modal .modal-wrapper::-webkit-scrollbar-thumb{
+    background-color: #591b04;
+    border-radius: .6rem;
+}
 
 .modal .modal-wrapper .header{
     grid-row: 1/2;
@@ -49,10 +56,10 @@
     margin: 2rem 0 6rem 6rem;
 }
 .modal .modal-wrapper .information{
-    margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0 1.5rem;
 
     grid-column: 2/3;
     grid-row: 2/3;

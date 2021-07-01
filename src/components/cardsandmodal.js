@@ -5,7 +5,7 @@ import Sair from '../assets/imgs/sair.png'
 export default function Cards({datas, loading}){
     const [keyPress, setKeyPress] = useState('')
     if(loading){
-        <div>Rastreando...</div>
+        return <div className='loading'>Rastreando...</div>
     }
 
     const closeModal = () => {
@@ -31,7 +31,7 @@ export default function Cards({datas, loading}){
                     </div>
             })}
         </div>
-
+            {}
         <div className='modal'> 
             {datas.map((data) => {
                 if(data.id == keyPress){
