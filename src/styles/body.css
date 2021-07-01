@@ -1,17 +1,16 @@
 body{
     background-image: url(../assets/imgs/bibliotecaImg.jpg);
     background-position: left;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 70% 100%;
-    height: 100vh;
-    width: 100vw;
+    background-size: 75% auto;
     display: flex;
 }
 div.body{
     /* background-image: linear-gradient(to top right, #A683E3 40%, #E4E9FD 40.20%); */
-    background: linear-gradient(-60deg,#F28705 67%, transparent 0);
+    background: linear-gradient(-50deg,#F28705 67%, transparent 0);
     width: 100vw;
-    height: 100%;
+    min-height: 100vh;
 }
 
 /* input */
@@ -29,6 +28,7 @@ form{
 }
 label{
     font-size: 1.6rem;
+    align-self: flex-end;
 }
 input{
     width: 60rem;
@@ -38,5 +38,5 @@ input{
     outline: none;
     padding: 1rem;
     border-radius: .6rem;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }

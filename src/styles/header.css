@@ -6,14 +6,25 @@ header{
     margin: 0 auto;
 }
 .logo{
-    padding-left: 4rem;
+    padding-left: 3rem;
 }
 img{
     width: 13rem;
     height: 13rem;
 }
 a{
-    color: #591B04;
+    color: #BF5B04;
+
+    border: 2px solid #BF5B04;
+    border-radius: 2rem;
+
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+
+    font-family: 'Roboto', sans-serif;
+}
+a:hover{
+    filter: brightness(.7)
 }
 
 nav{
@@ -21,17 +32,3 @@ nav{
     gap: 3rem
 }
 
-nav > div {
-    border: 2px solid #591B04;
-    border-radius: 2rem;
-
-    width: 13rem;
-    height: 4rem;
-    font-size: 1.7rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Roboto', sans-serif;
-}

@@ -2,9 +2,9 @@ import { React, useEffect, useState } from "react"
 import axios from 'axios'
 import '../styles/body.css'
 import '../styles/cards.css'
-import Cards from "./cards"
+import Cards from "./cardsandmodal"
 
-export default function Input(){
+export default function Input(props){
     const [search, setSearch] = useState('')
     const [datas, setDatas] = useState([])
 
@@ -15,21 +15,19 @@ export default function Input(){
             axios.get(`https://www.googleapis.com/books/v1/volumes?q=${params}`)
                 .then((res) => {
                     setDatas(res.data.items)    
-                    console.log(res.data.items)
+                    console.log(res.data)
                 })
         }
     }, [search])
     return(
         <main>
             <div className='input'>
-                <form>
+                <form action='#'>
                     <label for='search'>Escreva a palavra chave, a ser buscada:</label>
                     <input placeholder='Autor, titulo, gênero...' name='search' id='search' type='text' value={search} onChange={(e) => setSearch(e.target.value)}></input>
                 </form>
             </div>
-            <div className='container'>
                 <Cards datas={datas} loading={!datas.length}></Cards>
-            </div>
         </main>
     )
 }
