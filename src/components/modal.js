@@ -1,39 +1,19 @@
-import React, { useState } from 'react'
+import {React, useContext} from 'react'
 import '../styles/modal.css'
 import Sair from '../assets/imgs/sair.png'
+import AppContext from '../appContext/context'
 
-export default function Cards({datas, loading}){
-    const [keyPress, setKeyPress] = useState('')
-    if(loading){
-        return <div className='loading'>Rastreando...</div>
-    }
+
+export default function Modal(props){
+    const {keyPress} = useContext(AppContext)
 
     const closeModal = () => {
         document.querySelector('.modal').classList.toggle('active')
     }
 
-    const activeModal = (dataId) => {
-        closeModal()
-        setKeyPress(dataId)
-    }
     return(
-        <>
-        <div className='container'>
-            {datas.map((data) =>{
-            return  <div>
-                        <h1>{data.volumeInfo.title}</h1>
-                        <h3>{data.volumeInfo.subtitle}</h3>
-                        <img src={data.volumeInfo.imageLinks == undefined ? '' : data.volumeInfo.imageLinks.thumbnail} alt='Thumbnail this book'></img>
-                        <section>
-                            <h6>Authors: {data.volumeInfo.authors}</h6>
-                        </section>
-                        <button value={data.id} onClick={(e) => activeModal(e.target.value)}>More</button>
-                    </div>
-            })}
-        </div>
-            {}
         <div className='modal'> 
-            {datas.map((data) => {
+            {props.datas.map((data) => {
                 if(data.id == keyPress){
                     return  <div className='modal-wrapper'>
                                     <section className='header'>
@@ -52,6 +32,5 @@ export default function Cards({datas, loading}){
                 }
             })}    
         </div>
-        </>
     )
 }

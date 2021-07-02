@@ -2,7 +2,9 @@ import { React, useEffect, useState } from "react"
 import axios from 'axios'
 import '../styles/body.css'
 import '../styles/cards.css'
-import Cards from "./cardsandmodal"
+
+import Modal from "./modal"
+import Cards from "./cards"
 
 export default function Input(props){
     const [search, setSearch] = useState('')
@@ -28,6 +30,7 @@ export default function Input(props){
                 </form>
             </div>
                 <Cards datas={datas} loading={!datas.length}></Cards>
+                <Modal datas={datas}></Modal>
         </main>
     )
 }
