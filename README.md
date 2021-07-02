@@ -1,3 +1,7 @@
+![Captura de tela 2021-07-01 17 41 27](https://user-images.githubusercontent.com/65229051/124217767-50959d80-dacf-11eb-9877-1d9311e0ebe1.png)
+![Captura de tela 2021-07-01 16 44 52](https://user-images.githubusercontent.com/65229051/124217772-52f7f780-dacf-11eb-9430-2e567c7bac0d.png)
+![Captura de tela 2021-07-01 16 45 02](https://user-images.githubusercontent.com/65229051/124217778-555a5180-dacf-11eb-9f32-e96164d6ff0c.png)
+![Captura de tela 2021-07-01 16 54 18](https://user-images.githubusercontent.com/65229051/124217782-57241500-dacf-11eb-984d-d57548ab71f2.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
