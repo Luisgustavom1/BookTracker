@@ -7,8 +7,12 @@ const defaultKeyPress = {
 
 const AppProvider = ({children}) => {
     const [keyPress, setKeyPress] = useState(defaultKeyPress)
+
+    const setToKeyPress = (key) => {
+        setKeyPress(key)
+    }
     return(
-        <AppContext.Provider value={{keyPress, setKeyPress}}>
+        <AppContext.Provider value={{keyPress, setToKeyPress}}>
             {children}
         </AppContext.Provider>
     )

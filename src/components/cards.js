@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import AppContext from '../appContext/context'
 
 export default function Cards({datas, loading}){
-    const {setKeyPress} = useContext(AppContext)
+    const {setToKeyPress} = useContext(AppContext)
     if(loading){
         return <div className='loading'>Rastreando...</div>
     }
     const activeModal = (dataId) => {
         document.querySelector('.modal').classList.toggle('active')
-        setKeyPress(dataId)
+        setToKeyPress(dataId)
     }
     return(
         <>
